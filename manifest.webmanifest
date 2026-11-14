@@ -1,0 +1,14 @@
+{
+  "name": "Claude Finance",
+  "short_name": "Claude Finance",
+  "description": "A private, read-only mirror of Claude Finance",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#262624",
+  "theme_color": "#262624",
+  "icons": [
+    {"src": "icon-180.png", "sizes": "180x180", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

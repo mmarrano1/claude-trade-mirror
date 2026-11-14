@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#262624">
+<title>Claude Finance mirror: a guide</title>
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-180.png">
+<style>
+:root{color-scheme:dark;--bg:#262624;--panel:#30302e;--panel2:#1f1e1d;--ink:#faf9f5;--muted:#a6a39b;--line:#3e3e3a;--accent:#d97757;
+--pos:#7cbf8a;--neg:#e58b6f;--warn:#e0b35a;--long:#9b84d6;--medium:#5b9bd5;--short:#d97757;
+--serif:ui-serif,"Iowan Old Style","Palatino","Georgia",serif;--sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+main{max-width:680px;margin:0 auto;padding:calc(28px + env(safe-area-inset-top,0px)) 18px calc(48px + env(safe-area-inset-bottom,0px))}
+header{display:flex;align-items:center;gap:14px}
+header img{width:56px;height:56px;border-radius:14px}
+.eyebrow{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0}
+h1{font:600 28px/1.15 var(--serif);margin:2px 0 0}
+h2{font:500 21px/1.25 var(--serif);margin:30px 0 8px}
+p{margin:0 0 12px}
+.lead{font-size:17px;margin-top:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin:12px 0}
+ol,ul{margin:0 0 12px;padding-left:22px}li{margin:4px 0}
+dl{margin:0;display:grid;gap:10px}
+dt{font-weight:700}dd{margin:0;color:var(--muted)}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:1px 9px;border-radius:99px;border:1px solid var(--c);color:var(--c);margin-right:4px}
+.pill{display:inline-block;font-size:11px;font-weight:750;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:7px}
+.sell{background:#3d2a24;color:var(--neg)}.hold{background:#26352a;color:var(--pos)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.go{display:inline-block;margin-top:20px;font-weight:700;padding:13px 20px;border-radius:12px;background:var(--accent);color:#1d100c;text-decoration:none}
+.muted{color:var(--muted)}
+small{font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<header><img src="icon-180.png" alt="" width="56" height="56"><div><p class="eyebrow">Guide</p><h1>What this page is</h1></div></header>
+
+<p class="lead">This is a <b>read-only copy of one person's Claude Finance app</b>. The app runs on its owner's Mac and keeps an eye on the owner's
+Schwab account. This site shows the same numbers on a phone or iPad. Every copy of Claude Finance has its own site and its own code:
+yours shows your account and nobody else's. After you unlock it, <b>More</b> says whose copy you're looking at.</p>
+
+<div class="card">
+<p><b>It can't do anything.</b> No buttons place trades, move money or change settings. It only shows what the owner's Mac already knows.</p>
+<p style="margin:0"><b>It isn't advice.</b> It shows what the owner's own rules and Firm say and why. The decisions are the owner's.</p>
+</div>
+
+<h2>How to open it</h2>
+<ol>
+<li>On the Mac, open Claude Finance → Settings → <b>Phone</b>. It shows this site's address. Open it in <b>Safari</b> on the phone.</li>
+<li>Type the code (Settings → Phone → <b>Show the code</b> on the Mac). Capitals, spaces and dashes don't matter.</li>
+<li>Leave “Remember on this device” on, and you won't need the code again on this phone.</li>
+<li>Best: tap <b>Share</b> → <b>Add to Home Screen</b>. It then opens full screen like an app, the bottom tabs work with one tap
+(in Safari the first tap only brings back Safari's bar), and it opens even without a connection. You'll type the code once more there.</li>
+</ol>
+
+<h2>Is it private?</h2>
+<p>Yes. Before anything leaves the Mac, the numbers are locked with the code. The website only stores the locked copy, which is just
+scrambled text without the code. Only someone with the code can read it, so only give the code to someone you want to see the whole account. To lock everyone
+out, change it on the Mac (Settings → Phone → <b>Change the code</b>): the old code stops working at once, on every phone.</p>
+
+<h2>What you're looking at</h2>
+<p>The tabs at the bottom.</p>
+<dl>
+<dt>Positions</dt>
+<dd><b>Your account</b> is the owner's whole Schwab account (stocks plus cash). The chart compares it with putting the same money in the
+S&amp;P 500 (the dashed line). Money moved in from the bank is never counted as a gain. Drag a finger across any chart to read a day,
+and pinch to zoom.<br>
+<b>Things to do</b> lists orders waiting on you, if there are any.<br>
+<b>Your positions</b> shows each stock in the account: today's price, the gain or loss since it was bought, and one line saying what happens next
+(for example “Falls to $24.84 → Schwab sells it by itself”). Tap one for its chart with what was paid, the bot's note and Claude's research.<br>
+<b>On the way</b> and <b>Coming up</b> show orders and bank transfers in progress, earnings reports, and when a planned holding period ends.</dd>
+<dt>Check a stock</dt>
+<dd>Type a ticker or a company name (NVDA, Apple, Costco…). For the roughly 1,500 stocks the Mac scans, the answer shows up right away:
+what the bot thinks (<b>would buy</b> or <b>not now</b>, and why), a checkmark for each of the five entry rules, and how the stock has done.
+<b>Closest to a buy</b> lists the stocks the bot likes most today.<br>
+For any other stock, or for the bot's full write-up, tap <b>Ask the bot</b>. That sends the ticker (locked with the code) to the Mac,
+which checks it and sends the answer back here, usually within a few minutes while Claude Finance is open on the Mac. Asking never buys anything.</dd>
+<dt>More</dt>
+<dd>Turn on notifications, open <b>Full view</b> (the same screens as on the Mac), look for an update, open this guide, or lock the page.</dd>
+<dt>Three horizons</dt>
+<dd>The account is split by how long something is meant to be held. Each has its own rules:
+<ul>
+<li><span class="tag" style="--c:var(--long)">Long-term</span>Index funds (Nasdaq-100 and S&amp;P 500) kept for years and never sold because of a drop.</li>
+<li><span class="tag" style="--c:var(--medium)">Medium-term</span>Researched company stocks held for months up to a year, with only an emergency stop (−40%).</li>
+<li><span class="tag" style="--c:var(--short)">Short-term</span>About 2-month trades of the strongest stocks: sell at −20% (stop-loss) or +40% (take-profit), or after about 2 months.</li>
+</ul></dd>
+</dl>
+
+<h2>A few words</h2>
+<p>The main ones:</p>
+<dl>
+<dt>Stop-loss</dt><dd>An order that sells automatically if the price falls to a set level, to limit a loss.</dd>
+<dt>Take-profit</dt><dd>The price where the rules say to sell and keep the gain.</dd>
+<dt>Earnings</dt><dd>A company's quarterly report. The stock often moves a lot the next day.</dd>
+<dt>50-day / 200-day average</dt><dd>The stock's average price over those days. Above the 200-day line usually means a longer uptrend.</dd>
+</dl>
+
+<h2>Is it up to date?</h2>
+<p>It updates on its own after every scan on the Mac (weekdays around 9:45 AM, noon and 4:15 PM, and whenever the app is open).
+The label at the top right says when the Mac last checked prices. Its dot shows how fresh that is: <span class="dot" style="background:var(--pos)"></span>green is current,
+<span class="dot" style="background:var(--warn)"></span>yellow means the Mac missed a scheduled check (it may be asleep or away), so numbers may be out of date.
+Tap it (or <b>More</b> → <b>Check for an update</b>) to look for a newer copy.</p>
+
+<a class="go" href="./">Open the mirror</a>
+<p class="muted" style="margin-top:22px"><small>Each copy of Claude Finance has its own mirror. This one belongs to whoever set it up on their Mac.</small></p>
+</main>
+</body>
+</html>
